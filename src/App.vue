@@ -1,11 +1,11 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import Nav from "./components/nav_bar/Main.vue"
-import Section1 from "./components/section1/Main.vue"
+// import Section1 from "./components/section1/Main.vue"
 // import Forms from "./components/forms/Main.vue"
 export default {
   components: {
-    Section1,
+    // Section1,
     // Forms,
     Nav
   }
@@ -19,12 +19,12 @@ export default {
         <Nav/>
       </div>
       <section class="page1">
-        <Section1/>
+        <!-- <Section1/> -->
       </section>
       <!-- <section class="forms">
         <Forms/>
       </section> -->
-      <!-- <RouterView /> -->
+      <RouterView />
     </div>
   </section>
 </template>
