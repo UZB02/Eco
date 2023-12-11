@@ -1,6 +1,7 @@
 <template>
     <section class="page1 w-full bg-slate-400" style="height:90vh;">
         <div class="container m-0 m-auto flex gap-4 items-center justify-center flex-col top-36 absolute">
+            <SVGS />
             <!-- <div class="image w-full flex items-center justify-end">
         <img src="../components/img/icon.jpg"
           class="rounded-full w-2/12">
@@ -16,7 +17,14 @@
     </section>
 </template>
 
-<script setup></script>
+<script>
+import SVGS from "../svgss/Main.vue"
+export default {
+    components: {
+        SVGS
+    }
+}
+</script>
 <style scoped>
 .page1 {
     background: url("https://dta0yqvfnusiq.cloudfront.net/envirocleanusa/2019/04/dreamstime-xxl-103309954-5cae5f610cf77.jpg");
@@ -26,9 +34,10 @@
 }
 
 @media screen and (max-width: 600px) {
-    .page1{
+    .page1 {
         background-position: center;
     }
+
     img {
         width: 50%;
     }
