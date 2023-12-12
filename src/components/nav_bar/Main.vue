@@ -2,7 +2,7 @@
     
 
     <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-lg">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="./icon.jpg" class="w-16" alt="Flowbite Logo" />
             <span class="self-center text-3xl font-semibold whitespace-nowrap" style="color: rgb(215, 215, 2); text-shadow:0 0 5px yellow">Eco Clean</span>
