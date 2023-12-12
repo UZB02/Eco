@@ -81,7 +81,7 @@
 export default {
     methods: {
         redirectToPhoneNumber() {
-            const phoneNumber = "+998911234567";
+            const phoneNumber = "+998937110278";
             window.location.href = `tel:${phoneNumber}`;
         },
     },
