@@ -23,7 +23,7 @@ export default {
 </script>
 <style scoped>
 .page1 {
-  background: url("../img/photo_2023-12-12_10-47-31.jpg");
+  background: url("../components/img/photo_2023-12-12_10-47-31.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
