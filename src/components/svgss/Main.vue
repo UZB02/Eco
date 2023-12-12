@@ -69,19 +69,24 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Telegram_Messenger.png/800px-Telegram_Messenger.png"
                         alt="">
                 </a>
-                <!-- youtobe -->
-                <a href="#">
-                    <svg fill="red" width="50" height="50" viewBox="-2 -2 24 24" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMinYMin" class="jam jam-youtube-circle">
-                        <path
-                            d='M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z' />
-                        <path
-                            d='M12.923 6.526H7.077C5.93 6.526 5 7.446 5 8.58v2.89c0 1.135.93 2.054 2.077 2.054h5.846c1.147 0 2.077-.92 2.077-2.054V8.58c0-1.135-.93-2.054-2.077-2.054zm-1.404 3.64l-2.735 1.29a.11.11 0 0 1-.157-.099v-2.66a.11.11 0 0 1 .16-.097l2.734 1.37c.081.042.08.157-.002.196z' />
-                    </svg>
-                </a>
+                <!-- Phone -->
+                  <a href="#" @click="redirectToPhoneNumber">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/>
+          </svg>
+        </a>
             </div>
 </template>
-<script setup></script>
+<script>
+export default {
+    methods: {
+        redirectToPhoneNumber() {
+            const phoneNumber = "+998911234567";
+            window.location.href = `tel:${phoneNumber}`;
+        },
+    },
+};
+</script>
 <style scoped>
 .svg {
     display: flex;
@@ -135,17 +140,20 @@
 }
 
 .svg a:nth-child(3) svg {
+    fill: rgba(0, 0, 255, 0.678);
     border-radius: 50%;
-    animation: animYoutube 2s infinite linear;
+    animation: animPhone 2s infinite linear;
 }
 
-@keyframes animYoutube {
+@keyframes animPhone {
     0% {
+        
         box-shadow: none;
     }
 
     50% {
-        box-shadow: inset 0px 0px 10px 5px red;
+        transform: scale(1.05);
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 255, 0.678);
     }
 
     100% {
