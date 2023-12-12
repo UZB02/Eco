@@ -54,4 +54,54 @@ export default {
         width: 100%;
     }
 }
+@media screen and (max-width: 350px) {
+    .page1 {
+        background-position: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .info {
+        width-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .info p {
+        text-align: center;
+        font-size: 1em;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .page1 {
+        background-position: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .info {
+        width-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .info p {
+        text-align: center;
+        font-size: 1em;
+        width: 100%;
+    }
+}
 </style>
